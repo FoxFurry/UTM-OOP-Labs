@@ -7,9 +7,9 @@ public class Monitor {
     public static class Dimension{
         int a, b;
     }
-    String color;
-    Resolution res = new Resolution();
-    Dimension dim = new Dimension();
+    private String color;
+    private Resolution res = new Resolution();
+    private Dimension dim = new Dimension();
 
     public Monitor(int res_x, int res_y, int dim_a, int dim_b){
         res.x = res_x; res.y = res_y;
@@ -23,5 +23,15 @@ public class Monitor {
     }
     public void setColor(String _color){
         color = _color;
+    }
+
+    public Dimension getDim() {
+        return dim;
+    }
+    public Resolution getRes() {
+        return res;
+    }
+    public String getColor() {
+        return color;
     }
 }

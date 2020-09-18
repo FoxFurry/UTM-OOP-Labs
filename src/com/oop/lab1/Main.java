@@ -2,7 +2,7 @@ package com.oop.lab1;
 
 public class Main {
     public static boolean compareDisplays(Monitor _dis1, Monitor _dis2){
-        return _dis1.color.length() > _dis2.color.length() || (_dis1.res.x > _dis2.res.x && _dis1.res.y > _dis2.res.y); // I dont know hot to compare monitors so here, a little workaround
+        return _dis1.getColor().length() > _dis2.getColor().length() || (_dis1.getRes().x > _dis2.getRes().x && _dis1.getRes().y > _dis2.getRes().y); // I dont know hot to compare monitors so here, a little workaround
     }
 
     public static void main(String[] args) {
