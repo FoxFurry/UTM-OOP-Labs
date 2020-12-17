@@ -16,7 +16,7 @@ public class MainCalculator {
             {
                 resultField.setText(unlucky.message);
             }
-            catch (InvalidOperandException invalidOperation)
+            catch (InvalidOperation invalidOperation)
             {
                 resultField.setText(invalidOperation.message);
             }
@@ -28,7 +28,7 @@ public class MainCalculator {
     }
 
 
-    private static void calculate(TextField num1, TextField num2, TextField resultField, String operand) throws UnluckyException, InvalidOperandException {
+    private static void calculate(TextField num1, TextField num2, TextField resultField, String operand) throws UnluckyException, InvalidOperation {
         float numOne, numTwo, result;
 
         numOne = Float.parseFloat(num1.getText());
@@ -40,7 +40,7 @@ public class MainCalculator {
             case "+" -> numOne + numTwo;
             case "-" -> numOne - numTwo;
             case "13" -> throw new UnluckyException();
-            default -> throw new InvalidOperandException();
+            default -> throw new InvalidOperation();
         };
 
         resultField.setText(String.valueOf(result));
