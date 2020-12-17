@@ -7,7 +7,28 @@ so I decided not to include it in constructor.
 * All attributes are marked as private and corresponding getters were created 
 
 ## Lab 2.
-At this point only sample exists
+Completed, nothing special to add
+
+## Lab 3.
+Completed, nothing special to add
+
+## Lab 4.
+Should have I wrote a string parser? Or it should have been just hard-coded
+
+## Lab 5.
+Completed, nothing special to add
+
+## Lab 6.
+Some classes have completely empty bodies
+
+## Lab 7.
+Completed, nothing special to add
+
+## Lab 8.
+A basically reworked lab 7
+
+## Lab 9.
+Layouts are cool, but hard-coding a grid is better
 
 <hr>
 Thanks for attention
